@@ -1,0 +1,60 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+<BorderPane fx:controller="Controller"  xmlns:fx="http://javafx.com/fxml" >
+    <left>
+        <VBox spacing = "10" alignment="CENTER">
+            <Button text="List all words alphabetically" fx:id="listButton" onAction="#onListWordsClicked"/>
+            <Label text="Search for a German word:"/>
+            <TextField fx:id="searchGerman" onKeyReleased="#handleSearchKeyReleased"/>
+            <Button text="Search" onAction="#onSearchClicked" fx:id="searchButton"/>
+        </VBox>
+    </left>
+    <bottom>
+        <HBox spacing = "10" alignment="CENTER">
+            <Button text="Least correct word" fx:id="leastButton" onAction="#onLeastClicked"/>
+            <Button text="Random word" onAction="#onRandomClicked" fx:id="randomButton"/>
+            <Button text="Answer" onAction="#onAnswerClicked" fx:id="answerButton"/>
+            <Button text="Correct" fx:id="correctButton" onAction="#onCorrectClicked" style="-fx-background-color: greenyellow"/>
+            <Button text="False" fx:id="falseButton" onAction="#onFalseClicked" style="-fx-background-color: lightcoral"/>
+        </HBox>
+    </bottom>
+    <right>
+        <VBox spacing = "10" alignment="CENTER">
+            <Label text="Enter a new word"/>
+            <HBox spacing = "10">
+                <Label text="German" />
+                <TextField fx:id="enterGerman" onKeyReleased="#handleSubmitKeyReleased"/>
+            </HBox>
+            <HBox spacing = "10">
+                <Label text="English" />
+                <TextField fx:id="enterEnglish" onKeyReleased="#handleSubmitKeyReleased"/>
+            </HBox>
+            <Button text="Submit" onAction="#onSubmitClicked" fx:id="submitButton"/>
+            <Label text="remove a word"/>
+            <HBox spacing = "10">
+                <Label text="Enter id"/>
+                <TextField fx:id="remove" onKeyReleased="#handleRemoveKeyReleased"/>
+            </HBox>
+            <Button text="remove" onAction="#onRemoveClicked" fx:id="removeButton"/>
+            <Button text="reset statistics" fx:id="resetButton" onAction="#onResetClicked"/>
+        </VBox>
+    </right>
+    <center>
+        <TextArea fx:id="area" style="-fx-background-color: white; -fx-font-weight:bold; -fx-font-color:black">
+        </TextArea>
+    </center>
+
+
+
+
+
+
+</BorderPane>
