@@ -1,6 +1,6 @@
 German vocabulary testing app
 
-Built using intellij, mavan, JDBC, mySQL.
+Built using intellij, mavan, JDBC, mySQL, JavaFX.
 
 To get the app working:
 1. Open the DataSource class.
