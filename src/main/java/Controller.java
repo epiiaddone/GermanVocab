@@ -2,7 +2,6 @@ import java.util.List;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import javax.xml.soap.Text;
 import model.Word;
 import model.Datasource;
 import javafx.scene.control.TextField;

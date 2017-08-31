@@ -21,7 +21,7 @@
         <HBox spacing = "10" alignment="CENTER">
             <Button text="Least correct word" fx:id="leastButton" onAction="#onLeastClicked"/>
             <Button text="Random word" onAction="#onRandomClicked" fx:id="randomButton"/>
-            <Button text="Answer" onAction="#onAnswerClicked" fx:id="answerButton"/>
+            <Button text="Show Answer" onAction="#onAnswerClicked" fx:id="answerButton"/>
             <Button text="Correct" fx:id="correctButton" onAction="#onCorrectClicked" style="-fx-background-color: greenyellow"/>
             <Button text="False" fx:id="falseButton" onAction="#onFalseClicked" style="-fx-background-color: lightcoral"/>
         </HBox>

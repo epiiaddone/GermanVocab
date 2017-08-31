@@ -1,6 +1,6 @@
 package model;
 
-import com.sun.org.apache.regexp.internal.RE;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -13,13 +13,10 @@ import java.util.Random;
 public class Datasource {
 
   public static final String DB_NAME = "vocabulary.db";
-  public static final String CONNECTION_STRING = "jdbc:sqlite:C:\\Users\\Grichards\\Documents" +
-      "\\docsmod\\javaprojects\\intllijprojectsall\\GermanVocab\\" + DB_NAME;
+  public static final String CONNECTION_STRING = "jdbc:sqlite:C:\\Users\\Grichards\\Documents\\"
+      + "docsmod\\emplyoment\\git hub demos\\GermanVocab\\" + DB_NAME;
 
-  public static final String TABLE_VOCABULARY = "vocabulary";
-  public static final String COLUMN_ID = "id";
-  public static final String COLUMN_GERMAN = "german";
-  public static final String COLUMN_ENGLISH = "english";
+
   public static final int INDEX_ID = 1;
   public static final int INDEX_GERMAN = 2;
   public static final int INDEX_ENGLISH = 3;
